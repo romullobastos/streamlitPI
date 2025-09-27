@@ -346,31 +346,6 @@ st.sidebar.metric("Total de Ocorrências", f"{len(df_streamlit):,}")
 st.sidebar.metric("Número de Clusters", df_streamlit['cluster'].nunique())
 st.sidebar.metric("Tipos de Crime", df_streamlit['tipo_crime'].nunique())
 
-# --- Como Rodar o Aplicativo ---
-st.sidebar.subheader("🚀 Como Rodar Localmente")
-st.sidebar.markdown("""
-1. Clone o repositório
-2. `pip install -r requirements.txt`
-3. `streamlit run app.py`
-4. Acesse `http://localhost:8501`
-""")
-
-# --- Deploy no Streamlit Cloud ---
-st.sidebar.subheader("☁️ Deploy no Streamlit Cloud")
-st.sidebar.markdown("""
-**✅ Projeto Pronto para Deploy!**
-
-1. 📤 Faça upload para GitHub
-2. 🌐 Acesse [share.streamlit.io](https://share.streamlit.io)
-3. 🔗 Conecte seu repositório
-4. 🚀 Deploy automático!
-
-**Arquivos incluídos:**
-- ✅ `app.py`
-- ✅ `requirements.txt`
-- ✅ `df_streamlit.csv`
-- ✅ `README.md`
-""")
 
 
 # --- Finish task ---
